@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from www.caffeine.tv/auth/social-mobile.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Feb 2024 20:24:27 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Caffeine</title>
+    <link rel="shortcut icon" type="image/png" href="../favicon-v3-32x32.png" />
+    <link rel="stylesheet" href="../static.css" />
+    <style>
+      html {
+        background-color: #f2f2f2;
+      }
+
+      body {
+        background-color: #f2f2f2;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        text-rendering: optimizeLegibility;
+        text-align: center;
+      }
+
+      .logo {
+        margin-top: 5em;
+        margin-bottom: 20px;
+      }
+
+      .title {
+        font-size: 30px;
+        font-weight: 200;
+        color: #333333;
+        margin-bottom: 10px;
+      }
+
+      .message {
+        font-size: 18px;
+        color: #009fe0;
+        text-decoration: none;
+      }
+
+      .message:hover {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <div class="loadingIndicator">
+        <div class="loadingIndicator1 circle"></div>
+        <div class="loadingIndicator2 circle"></div>
+        <div class="loadingIndicator3 circle"></div>
+        <div class="loadingIndicator4 circle"></div>
+        <div class="loadingIndicator5 circle"></div>
+        <div class="loadingIndicator6 circle"></div>
+        <div class="loadingIndicator7 circle"></div>
+        <div class="loadingIndicator8 circle"></div>
+        <div class="loadingIndicator9 circle"></div>
+        <div class="loadingIndicator10 circle"></div>
+      </div>
+    </div>
+    <div class="verifying box">
+      <div class="title">Connecting...</div>
+    </div>
+    <script src="es6-promise.auto.min.js"></script>
+    <script src="qs.min.js"></script>
+    <script src="axios.min.js"></script>
+    <script>
+      var search = window.location.search || "";
+      var query = Qs.parse(search.slice(1));
+      axios.post("https://api.caffeine.tv/v1/oauth/callback", query);
+    </script>
+  </body>
+
+<!-- Mirrored from www.caffeine.tv/auth/social-mobile.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Feb 2024 20:24:30 GMT -->
+</html>

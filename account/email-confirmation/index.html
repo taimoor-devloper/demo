@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from www.caffeine.tv/account/email-confirmation/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Feb 2024 20:24:33 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Caffeine</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="../../favicon-v3-32x32.png" />
+    <!-- Google Tag Manager -->
+    <!-- prettier-ignore -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WRQXKGP');</script>
+    <!-- End Google Tag Manager -->
+
+    <style>
+      html {
+        background-color: black;
+      }
+
+      body {
+        background-color: black;
+        color: white;
+        font-family: "Poppins", "Helvetica Neue", "Helvetica", sans-serif;
+        text-rendering: optimizeLegibility;
+        text-align: left;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      button,
+      select {
+        text-transform: none;
+      }
+
+      button,
+      input {
+        overflow: visible;
+      }
+
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+
+      .emailConfirmationContainer {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        padding-top: 80px;
+      }
+
+      .logo {
+        padding-top: 10px;
+        padding-right: 8px;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .title {
+        color: rgb(255, 255, 255);
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: -0.36px;
+        line-height: 54px;
+        width: 308px;
+        padding-left: 8px;
+      }
+
+      .body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .message {
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0px;
+        padding-left: 8px;
+        padding-top: 44px;
+      }
+
+      .button {
+        align-items: center;
+        height: 40px;
+        padding: 0 15px;
+        font-size: 12px;
+        color: #0ff;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid #0ff;
+        border-radius: 20px;
+        outline: none;
+        transition: all 0.2s ease;
+        font-family: Poppins, Roboto, sans-serif;
+        font-weight: 500;
+      }
+
+      .highlightedButtonWithHoverEffect {
+        color: black;
+        background-color: #0ff;
+        border: 2px solid transparent;
+      }
+
+      .highlightedButtonWithHoverEffect:hover:not([disabled]),
+      .highlightedButtonWithHoverEffect:focus:not([disabled]) {
+        color: white;
+        background-color: black;
+        border: 2px solid #0ff;
+      }
+
+      .goToLobbyButton {
+        justify-content: center;
+        flex-direction: column;
+        height: 40px;
+        width: 160px;
+        line-height: 40px;
+        padding: 0;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0px;
+      }
+
+      .buttonContainer {
+        display: flex;
+        flex-direction: column;
+        max-width: 248px;
+        padding-top: 60px;
+      }
+
+      /* iPhone 5/SE and small Android devices */
+      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+        .logo {
+          display: none;
+        }
+
+        .emailConfirmationContainer {
+          padding-top: 49px;
+        }
+
+        .title {
+          padding-left: 8px;
+          font-size: 30px;
+          font-weight: 700;
+          letter-spacing: 0px;
+          line-height: 38px;
+          width: 232px;
+        }
+
+        .message {
+          padding-top: 53px;
+        }
+
+        .buttonContainer {
+          align-items: center;
+          padding-top: 128px;
+        }
+
+        .goToLobbyButton {
+          display: flex;
+          justify-content: center;
+          border-radius: 30px;
+          height: 60px;
+          width: 204px;
+          font-size: 16px;
+          font-weight: 700;
+          letter-spacing: 0px;
+        }
+      }
+
+      /* iPhone 6/7/8 */
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        .logo {
+          display: none;
+        }
+
+        .emailConfirmationContainer {
+          padding-top: 49px;
+        }
+
+        .title {
+          padding-left: 8px;
+          font-size: 30px;
+          font-weight: 700;
+          letter-spacing: 0px;
+          line-height: 38px;
+          width: 232px;
+        }
+
+        .message {
+          padding-top: 53px;
+        }
+
+        .buttonContainer {
+          align-items: center;
+          padding-top: 128px;
+        }
+
+        .goToLobbyButton {
+          display: flex;
+          justify-content: center;
+          border-radius: 30px;
+          height: 60px;
+          width: 204px;
+          font-size: 16px;
+          font-weight: 700;
+          letter-spacing: 0px;
+        }
+      }
+
+      /* iPhone 6+/7+/8+ */
+      @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) {
+        .logo {
+          display: none;
+        }
+
+        .emailConfirmationContainer {
+          padding-top: 49px;
+        }
+
+        .title {
+          padding-left: 8px;
+          font-size: 30px;
+          font-weight: 700;
+          letter-spacing: 0px;
+          line-height: 38px;
+          width: 232px;
+        }
+
+        .message {
+          padding-top: 53px;
+        }
+
+        .buttonContainer {
+          align-items: center;
+          padding-top: 128px;
+        }
+
+        .goToLobbyButton {
+          display: flex;
+          justify-content: center;
+          border-radius: 30px;
+          height: 60px;
+          width: 204px;
+          font-size: 16px;
+          font-weight: 700;
+          letter-spacing: 0px;
+        }
+      }
+
+      /* iPhone X */
+      @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+        .logo {
+          display: none;
+        }
+
+        .emailConfirmationContainer {
+          padding-top: 49px;
+        }
+
+        .title {
+          padding-left: 8px;
+          font-size: 30px;
+          font-weight: 700;
+          letter-spacing: 0px;
+          line-height: 38px;
+          width: 232px;
+        }
+
+        .message {
+          padding-top: 53px;
+        }
+
+        .buttonContainer {
+          align-items: center;
+          padding-top: 128px;
+        }
+
+        .goToLobbyButton {
+          display: flex;
+          justify-content: center;
+          border-radius: 30px;
+          height: 60px;
+          width: 204px;
+          font-size: 16px;
+          font-weight: 700;
+          letter-spacing: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="emailConfirmationContainer">
+      <div class="logo">
+        <svg viewBox="0 0 38 34" width="40" height="34">
+          <g fill="#FFFFFF" stroke="#FFFFFF" strokeWidth="{0.1}">
+            <path
+              d="M28.427 22.444l7.282-4.206-7.282 12.617v-8.411zm-6.533 3.773l5.087 5.876H11.718l10.176-5.876zm-12.32-7.115v11.753L1.941 17.633l7.631 1.469zm0-7.546L2.29 15.762 9.573 3.145v8.411zm6.532-3.773L11.02 1.907h15.263L16.106 7.783zm12.32 7.115V3.145l7.632 13.222-7.631-1.469zm0 6.499v-5.576l7.242 1.394-7.241 4.182zm-.906 1.57v8.364l-4.827-5.576 4.827-2.788zm-10.083-2.352l9.257 1.783-4.924 2.843-.002.001-.003.002-10.5 6.064 6.172-10.693zm-6.957-1.888v-.004-5.689l6.172 7.128-6.172 10.693V18.727zm-.907-6.124v5.576l-7.24-1.394 7.24-4.182zm.907-1.57V2.669l4.827 5.576-4.827 2.788zm10.083 2.352l-9.257-1.783 4.93-2.846h0l.003-.002 10.496-6.062-6.172 10.693zm6.957 1.888V20.966l-6.171-7.128L27.52 3.145v12.128zm-10.075 4.42l-6.22-7.183 9.33 1.796 6.22 7.184-9.33-1.796zm19.952-2.647l.002-.01v-.014a.45.45 0 0 0 0-.02l.001-.011v-.014a.44.44 0 0 0-.002-.017l-.001-.013-.002-.014a.687.687 0 0 0-.003-.016l-.002-.014-.004-.013a.512.512 0 0 0-.004-.015l-.004-.015-.004-.012a.547.547 0 0 0-.006-.016l-.006-.014a.256.256 0 0 0-.013-.026.35.35 0 0 0-.007-.014l-.003-.005-8.973-15.546c0-.002-.002-.003-.003-.004a.569.569 0 0 0-.018-.03l-.007-.008-.01-.014-.01-.012-.008-.01-.011-.01a.46.46 0 0 0-.01-.011l-.012-.01-.01-.01a.396.396 0 0 0-.012-.01l-.013-.01-.009-.006a.473.473 0 0 0-.014-.01l-.015-.009-.004-.002-.004-.002-.016-.009-.015-.007-.01-.005-.016-.006a.384.384 0 0 0-.014-.006l-.012-.004-.015-.004a.639.639 0 0 0-.014-.004l-.015-.004-.013-.002a.494.494 0 0 0-.015-.003l-.017-.002-.011-.001A.415.415 0 0 0 27.978 1H10.006l-.019.002h-.01l-.016.003a.517.517 0 0 0-.017.003l-.012.002-.015.004a.416.416 0 0 0-.015.004l-.013.003-.014.005a.447.447 0 0 0-.014.006l-.013.005-.013.006a.427.427 0 0 0-.015.007l-.012.006-.01.007a.556.556 0 0 0-.017.01l-.011.007-.009.006a.484.484 0 0 0-.016.013l-.011.008-.004.004-.004.003a.459.459 0 0 0-.025.024l-.008.009a.37.37 0 0 0-.046.06.45.45 0 0 0-.01.015l-.003.005L.661 16.773l-.003.005a.539.539 0 0 0-.015.03l-.006.012a.431.431 0 0 0-.028.09v.004l-.002.005-.002.014a.426.426 0 0 0-.002.02l-.002.011v.033l-.001.012v.013l.002.018.001.013.002.014.003.016.002.014.004.013.004.015.004.015.004.011.006.017.006.014.005.01.008.016.007.014.003.005 8.973 15.546.002.004a.43.43 0 0 0 .021.032l.01.014.005.006a.44.44 0 0 0 .03.033l.005.006.008.008.018.015.014.012.01.008a.448.448 0 0 0 .01.007l.023.015.01.006H9.8l.005.004c.015.008.031.016.047.022l.003.001.005.002c.014.006.028.01.043.015l.016.004a.492.492 0 0 0 .036.007l.018.003.044.003H27.976l.04-.002.01-.001.012-.002a.435.435 0 0 0 .021-.003l.017-.004.012-.003s0 0 0 0l.012-.003.018-.006a.452.452 0 0 0 .022-.008l.006-.002a.436.436 0 0 0 .033-.016l.015-.007.005-.003.017-.01.016-.011.01-.007.01-.009.014-.01.004-.004.01-.01.003-.002.01-.009.006-.006.014-.016.015-.017s0 0 0 0l.004-.005.01-.014a.494.494 0 0 0 .022-.033l.002-.004 8.969-15.538v-.001l.004-.007c.002-.002.002-.005.004-.006a.45.45 0 0 0 .02-.044c.003-.006.006-.01.008-.017l.003-.009a.492.492 0 0 0 .006-.017l.004-.013.002-.01a.365.365 0 0 0 .005-.02l.001-.005v-.006l.003-.013a.432.432 0 0 0 .002-.02h0z"
+            />
+          </g>
+        </svg>
+      </div>
+      <div class="main">
+        <div class="body">
+          <div class="verifying">
+            <div class="title">Verifying your email...</div>
+          </div>
+          <div class="success" style="display: none;">
+            <div class="title">Confirmed!</div>
+            <div class="message">
+              Your account has been<br />confirmed.<br /><br />Now you can broadcast, follow,
+              <br />react, get notified, and give props<br />
+              to support creators.
+            </div>
+            <div class="buttonContainer">
+              <a class="start-watching-anchor" href="../../index.html">
+                <button class="goToLobbyButton button highlightedButtonWithHoverEffect">
+                  Start watching
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="failure" style="display: none;">
+          <div class="title">We couldn&apos;t verify your email.</div>
+          <div class="message">Log in and click <br />resend to try again.</div>
+          <div class="buttonContainer">
+            <a href="../../index.html">
+              <button class="goToLobbyButton button highlightedButtonWithHoverEffect">
+                Log in
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="es6-promise.auto.min.js"></script>
+    <script src="qs.min.js"></script>
+    <script src="axios.min.js"></script>
+    <script>
+      var search = window.location.search || "";
+      var query = Qs.parse(search.slice(1));
+      axios
+        .post("https://api.caffeine.tv/v1/account/email/confirm", {
+          code: query.code || query.CODE,
+          caid: query.caid || query.CAID,
+        })
+        .then(
+          function onSuccess() {
+            document.querySelector(".verifying").style.display = "none";
+            document.querySelector(".success").style.display = "block";
+
+            const redirectUrl = localStorage.getItem("postEmailConfirmationUrl")
+            if (redirectUrl) {
+              document.querySelector(".start-watching-anchor").href = redirectUrl
+              localStorage.removeItem("postEmailConfirmationUrl")
+            }
+          },
+          function onFailure() {
+            document.querySelector(".verifying").style.display = "none";
+            document.querySelector(".failure").style.display = "block";
+          },
+        );
+    </script>
+  </body>
+
+<!-- Mirrored from www.caffeine.tv/account/email-confirmation/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Feb 2024 20:24:36 GMT -->
+</html>

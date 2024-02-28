@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from www.caffeine.tv/unsupported-browser.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Feb 2024 20:24:39 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Caffeine</title>
+    <link rel="shortcut icon" type="image/png" href="favicon-v3-32x32.png" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" />
+    <style>
+      html {
+        --minimum-page-height: 625px;
+        background-color: #fff;
+        min-height: var(--minimum-page-height);
+        font-family: "Poppins", "Helvetica Neue", "Helvetica", sans-serif;
+        min-width: 600px;
+        height: 100%;
+      }
+
+      body {
+        background-color: #fff;
+        margin: 0;
+        text-rendering: optimizeLegibility;
+        height: 100%;
+      }
+
+      a {
+        font-weight: normal;
+        text-decoration: none;
+        transition: color 0.25s;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .flexContainer {
+        display: flex;
+        height: 100%;
+        min-height: var(--minimum-page-height);
+      }
+
+      .broadcasterCarouselContainer {
+        position: relative;
+        max-width: 616px;
+        width: 40%;
+        background-color: black;
+      }
+
+      .broadcasterCarouselImage {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      .schedule {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        position: absolute;
+        left: 80px;
+        text-align: left;
+        bottom: 60px;
+      }
+
+      .broadcasterName {
+        font-weight: bold;
+      }
+
+      .rightSide {
+        max-width: 860px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .mainContent {
+        padding: 80px 80px 0;
+        height: 100%;
+      }
+
+      .logoContainer {
+        display: flex;
+        padding-bottom: 80px;
+      }
+
+      .logo {
+        padding-right: 10px;
+      }
+
+      .prerelease {
+        margin-top: -4px;
+        color: #c4c4c4;
+        font-size: 12px;
+        letter-spacing: 3.7px;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .tagline {
+        font-size: 35px;
+        font-weight: bold;
+        line-height: 45px;
+        padding-bottom: 60px;
+      }
+
+      .getAppText {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 24px;
+      }
+
+      .browserInfo {
+        font-size: 14px;
+        font-weight: 300;
+      }
+
+      .browserInfo a {
+        color: #888888;
+      }
+
+      .browserInfo a:hover {
+        color: #222222;
+      }
+
+      .button {
+        color: #fff;
+        background-color: #0000ff;
+        cursor: pointer;
+        outline: none;
+        font-weight: 400;
+        border-radius: 40px;
+        font-size: 20px;
+        padding: 18px 18px;
+        width: 160px;
+        text-align: center;
+      }
+
+      .button:hover {
+        color: #fff;
+      }
+
+      .buttonContainer {
+        display: flex;
+        margin-bottom: 24px;
+      }
+
+      .spacer {
+        width: 16px;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 80px;
+        flex-shrink: 0;
+      }
+
+      .footer a {
+        text-transform: none;
+        text-decoration: none;
+        transition: color 0.25s;
+        color: #222;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0px;
+        padding-right: 10px;
+      }
+
+      .footer a:last-child {
+        padding-right: 0;
+      }
+
+      .footer a:hover {
+        color: #222;
+        text-decoration: underline;
+      }
+
+      @media screen and (max-width: 900px) {
+        .broadcasterCarouselImage {
+          display: none;
+        }
+
+        .rightSide {
+          width: 100%;
+        }
+      }
+    </style>
+
+    <!-- Google Tag Manager -->
+    <!-- prettier-ignore -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WRQXKGP');</script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <div class="flexContainer">
+      <div class="broadcasterCarouselContainer">
+        <!-- All of the .broadcasterCarouselImage divs below this are just copy-pastes of this -->
+        <div
+          class="broadcasterCarouselImage"
+          style="background-image: linear-gradient(rgba(0, 0, 0, 0), #000);"
+        >
+          <div class="schedule">
+            <span class="broadcasterName"></span><br />
+            <span class="showName"></span><br />
+            <span class="showTime"></span>
+          </div>
+        </div>
+
+        <!-- BEGIN copied-and-pasted carousel placeholders -->
+        <div
+          class="broadcasterCarouselImage"
+          style="background-image: linear-gradient(rgba(0, 0, 0, 0), #000);"
+        >
+          <div class="schedule">
+            <span class="broadcasterName"></span><br />
+            <span class="showName"></span><br />
+            <span class="showTime"></span>
+          </div>
+        </div>
+        <div
+          class="broadcasterCarouselImage"
+          style="background-image: linear-gradient(rgba(0, 0, 0, 0), #000);"
+        >
+          <div class="schedule">
+            <span class="broadcasterName"></span><br />
+            <span class="showName"></span><br />
+            <span class="showTime"></span>
+          </div>
+        </div>
+        <div
+          class="broadcasterCarouselImage"
+          style="background-image: linear-gradient(rgba(0, 0, 0, 0), #000);"
+        >
+          <div class="schedule">
+            <span class="broadcasterName"></span><br />
+            <span class="showName"></span><br />
+            <span class="showTime"></span>
+          </div>
+        </div>
+        <div
+          class="broadcasterCarouselImage"
+          style="background-image: linear-gradient(rgba(0, 0, 0, 0), #000);"
+        >
+          <div class="schedule">
+            <span class="broadcasterName"></span><br />
+            <span class="showName"></span><br />
+            <span class="showTime"></span>
+          </div>
+        </div>
+        <div
+          class="broadcasterCarouselImage"
+          style="background-image: linear-gradient(rgba(0, 0, 0, 0), #000);"
+        >
+          <div class="schedule">
+            <span class="broadcasterName"></span><br />
+            <span class="showName"></span><br />
+            <span class="showTime"></span>
+          </div>
+        </div>
+        <div
+          class="broadcasterCarouselImage"
+          style="background-image: linear-gradient(rgba(0, 0, 0, 0), #000);"
+        >
+          <div class="schedule">
+            <span class="broadcasterName"></span><br />
+            <span class="showName"></span><br />
+            <span class="showTime"></span>
+          </div>
+        </div>
+        <!-- END copied-and-pasted carousel placeholders -->
+      </div>
+
+      <div class="rightSide">
+        <div class="mainContent">
+          <div class="logoContainer">
+            <div class="logo">
+              <svg
+                width="305px"
+                height="90px"
+                viewBox="0 0 1900 560"
+              >
+                <mask id="a" fill="#fff">
+                  <path fillRule="evenodd" d="M0 0h171.852v171.429H0z"></path>
+                </mask>
+                <g fillRule="evenodd">
+                  <path
+                    d="M85.926 102.857c19.634 0 37.305 10.899 46.117 28.442 4.25 8.465 14.577 11.888 23.062 7.648 8.486-4.24 11.918-14.541 7.667-23.006-14.675-29.219-44.121-47.37-76.846-47.37C38.546 68.571 0 107.023 0 154.286S38.546 240 85.926 240c32.725 0 62.17-18.151 76.846-47.37 4.25-8.464.82-18.765-7.667-23.006-8.485-4.243-18.811-.816-23.062 7.648-8.812 17.544-26.483 28.442-46.117 28.442-28.428 0-51.556-23.07-51.556-51.428s23.128-51.429 51.556-51.429M266.37 205.714c-28.427 0-51.555-23.07-51.555-51.428s23.128-51.429 51.555-51.429c28.428 0 51.556 23.071 51.556 51.429s-23.128 51.428-51.556 51.428m0-137.143c-47.38 0-85.926 38.452-85.926 85.715S218.991 240 266.37 240c19.33 0 37.185-6.404 51.556-17.19v.047c0 9.468 7.694 17.143 17.185 17.143 9.492 0 17.185-7.675 17.185-17.143v-68.571c0-47.263-38.546-85.715-85.926-85.715M764.74 68.571c-9.49 0-17.184 7.675-17.184 17.143v137.143c0 9.468 7.694 17.143 17.185 17.143 9.49 0 17.185-7.675 17.185-17.143V85.714c0-9.468-7.695-17.143-17.185-17.143M885.037 68.571c-47.38 0-85.926 38.452-85.926 85.715v68.571c0 9.468 7.695 17.143 17.185 17.143 9.49 0 17.185-7.675 17.185-17.143v-68.571c0-28.358 23.129-51.429 51.556-51.429 28.428 0 51.556 23.071 51.556 51.429v68.571c0 9.468 7.694 17.143 17.185 17.143 9.49 0 17.185-7.675 17.185-17.143v-68.571c0-47.263-38.546-85.715-85.926-85.715M595.834 137.143c7.093-19.956 26.204-34.286 48.61-34.286 22.405 0 41.518 14.33 48.611 34.286zm48.61-68.572c-47.379 0-85.925 38.452-85.925 85.715S597.065 240 644.445 240c22.952 0 44.53-8.915 60.758-25.106 6.71-6.694 6.71-17.549 0-24.243-6.712-6.696-17.592-6.694-24.303 0-9.738 9.714-22.684 15.063-36.455 15.063-22.404 0-41.506-14.332-48.6-34.285h117.34c9.49 0 17.186-7.675 17.186-17.143 0-47.263-38.547-85.715-85.926-85.715z"
+                    transform="translate(724.946 150)"
+                  ></path>
+                  <path
+                    d="M37.316 68.571c7.093-19.955 26.205-34.285 48.61-34.285 22.404 0 41.517 14.33 48.61 34.285zM85.926 0C38.546 0 0 38.451 0 85.714s38.547 85.715 85.926 85.715c22.952 0 44.53-8.916 60.758-25.106 6.711-6.694 6.711-17.55 0-24.243-6.712-6.697-17.592-6.695-24.303 0-9.737 9.713-22.683 15.063-36.455 15.063-22.404 0-41.505-14.333-48.6-34.286h117.34c9.491 0 17.186-7.675 17.186-17.143C171.852 38.451 133.306 0 85.926 0z"
+                    mask="url(#a)"
+                    transform="translate(724.946 150) translate(988.148 68.571)"
+                  ></path>
+                  <path
+                    d="M567.111 85.714c0-9.468-7.695-17.143-17.185-17.143h-48.6c7.094-19.953 26.197-34.285 48.6-34.285 9.492 0 17.185-7.675 17.185-17.143S559.418 0 549.926 0c-41.496 0-76.213 29.494-84.197 68.571h-58.921c7.094-19.953 26.196-34.285 48.6-34.285 9.491 0 17.185-7.675 17.185-17.143S464.899 0 455.407 0c-47.38 0-85.926 38.451-85.926 85.714v137.143c0 9.468 7.694 17.143 17.186 17.143 9.491 0 17.185-7.675 17.185-17.143v-120H464v120c0 9.468 7.694 17.143 17.185 17.143 9.492 0 17.185-7.675 17.185-17.143v-120h51.556c9.49 0 17.185-7.674 17.185-17.143M781.926 34.286c0-9.467-7.694-17.143-17.185-17.143-9.492 0-17.185 7.676-17.185 17.143s7.693 17.143 17.185 17.143c9.491 0 17.185-7.676 17.185-17.143"
+                    transform="translate(724.946 150)"
+                  ></path>
+                  <path d="M497.311 496.218l104.796-181.56-104.796 60.52zm-269.61 34.66h229.167L380.48 442.65zM53.109 297.706l114.58 198.513V319.762zm114.58-233.923L62.894 245.342l104.796-60.52zM437.3 29.12H208.132l76.39 88.23zm174.594 233.175L497.311 63.781v176.457zm-10.936 23.731L497.31 266.074v79.807zM402.849 429.731l69.096 79.806v-119.71zm-187.827 79.175l161.871-93.482.022-.012.096-.056 71.818-41.474-140.284-27.006zm-21.967-12.688l93.521-162.028-93.521-108.018zM64.043 273.973l103.646 19.953v-79.809zm198.108-143.704l-69.096-79.807v119.71zM449.98 51.094l-161.7 93.382-.006.004-72.102 41.638 140.284 27.006zm21.966 199.648c0 .042.002.113.013.402l-.013-.357V63.782l-93.52 162.027 93.52 108.019V250.83l.001-.096zm-20.87 97.735l-94.861-109.564-142.288-27.391 94.86 109.565zm198.21-66.53l-.009.052-.007.043-.006.04-.058.35a49.919 49.919 0 01-.15.647l-.008.035-.016.066-.05.186c-.03.11-.057.202-.09.31l-.033.106c-.044.142-.088.273-.14.42-.026.083-.03.09-.093.268-.06.158-.1.254-.175.431l-.015.034a12.331 12.331 0 01-.52 1.084c-.03.06-.067.128-.183.338l-.055.094a1.62 1.62 0 01-.08.138l-152.01 263.36-.067.108a10.519 10.519 0 01-.553.843l-.03.043c.015-.022.015-.022-.004.005l-.007.011a7.22 7.22 0 01-.454.597c-.101.124-.19.227-.339.395l-.03.035-.009.009c-.121.138-.203.23-.302.332a6.123 6.123 0 01-.534.523l-.002.002c-.122.12-.21.203-.305.283a12.117 12.117 0 01-.438.357l-.011.01-.072.056-.07.055c-.101.08-.174.135-.253.192l-.234.167a9.16 9.16 0 01-.406.268l-.031.019a.34.34 0 01-.016.01l-.044.028-.035.022a9.164 9.164 0 01-.382.236l-.105.059a.184.184 0 01-.01.004l-.02.012a8.167 8.167 0 01-.372.198l-.023.01a12.14 12.14 0 01-.93.436c-.198.08-.216.088-.283.112a12.679 12.679 0 01-1.056.358l.014-.004c-.094.03-.198.06-.319.091-.157.054-.203.059-.294.068.178-.018.178-.018 1.252-.43l-.96.363a6.695 6.695 0 01-.35.082l-.04.008-.21.049-.256.053c-.2.037-.376.064-.547.087l-.018.003-.161.023-.143.018a12.777 12.777 0 01-1.414.091l-.092.004-.043-.001H180.42l-.04.001h-.014l-.345-.011a11.355 11.355 0 01-1.476-.13l-.11-.017-.043-.007a13.52 13.52 0 01-1.043-.208l-.051-.013-.108-.028c-.114-.03-.174-.045-.247-.066-.36-.1-.716-.217-1.065-.35a3.902 3.902 0 01-.297-.112l-.012-.004a12.146 12.146 0 01-1.285-.615l-.1-.055-.008-.004.022.011-.128-.07.194.105-.008-.004-.177-.095a5.887 5.887 0 01-.41-.254 10.352 10.352 0 01-.526-.343 7.065 7.065 0 01-.564-.417l-.024-.019a13.091 13.091 0 01-.416-.339 12.586 12.586 0 01-.37-.33l-.057-.052-.018-.017-.01-.01a6.276 6.276 0 01-.443-.435 14.594 14.594 0 01-.71-.805c-.034-.039-.069-.081-.215-.264a9.053 9.053 0 01-.265-.366l-.026-.038a12.034 12.034 0 01-.54-.827 61.304 61.304 0 01-.094-.156l-.002.001L17.218 286.27c-.121-.23-.121-.23-.146-.282.022.047.022.047.12.228-.077-.137-.137-.25-.22-.412l-.024-.048a10.292 10.292 0 01-.2-.41 7.756 7.756 0 01-.265-.611l-.005-.012a11.855 11.855 0 01-.172-.451l-.005-.014-.022-.06a6.969 6.969 0 01-.209-.654l-.019-.067c-.047-.167-.077-.28-.098-.368l-.015-.053a7.072 7.072 0 01-.15-.688l-.005-.03-.006-.029a9.918 9.918 0 01-.072-.432l-.005-.03a7.715 7.715 0 01-.086-.738 10.463 10.463 0 01-.032-.466l-.006-.093c-.008-.13-.008-.13-.013-.325-.001-.105 0-.194.001-.279v-.04c.002-.181.008-.36.018-.544l.001-.032c.004-.104.01-.203.02-.338.013-.151.013-.151.022-.233l.003-.021.005-.048c.021-.205.046-.399.074-.578l.004-.03.015-.094a9.933 9.933 0 01.044-.271l.026-.15.004.001a10.987 10.987 0 01.138-.62 10.906 10.906 0 01.216-.773c.043-.136.074-.225.145-.426l-.006.015a12.418 12.418 0 01.46-1.125 14.01 14.01 0 01.385-.758l.049-.094.072-.13L169.347 10.165c.125-.211.166-.28.2-.332.068-.112.13-.21.176-.278.09-.142.185-.282.24-.36a10.754 10.754 0 01.735-.954 11.403 11.403 0 01.842-.903c.13-.127.264-.251.444-.412l-.18.165.018-.018.239-.22.22-.181.144-.116.064-.051c.155-.123.298-.232.483-.366l.024-.018.22-.156.218-.143.061-.04c.139-.089.277-.174.51-.312l-.04.022.023-.013a7.413 7.413 0 01.57-.312l.02-.01.015-.008a11.847 11.847 0 01.434-.212 6.811 6.811 0 01.708-.303l.008-.003c.12-.047.227-.087.396-.148l.02-.007a8.122 8.122 0 01.714-.229l.028-.007c.138-.04.271-.075.406-.108l.018-.005.069-.018a6.828 6.828 0 01.67-.142l.01-.002c.15-.027.267-.046.473-.077l.044-.007.073-.01a8.214 8.214 0 01.586-.066c.183-.016.346-.026.553-.036l.042-.002.183-.007.074-.003.27-.007h304.256a129.466 129.466 0 01.632.022c.174.008.326.018.432.028l.028.002.066.005a8.913 8.913 0 01.55.062l.13.02.023.004a13.545 13.545 0 01.472.078l.045.008c.104.019.104.019.279.054.142.032.142.032.245.057l.133.034.075.019c.12.03.234.06.363.097l.045.013a8.536 8.536 0 01.658.208l.085.032-.008-.003c.15.054.284.104.39.147l.042.016.014.005a9.814 9.814 0 01.654.283l.008.003c.133.062.233.111.453.223l.054.028c.136.071.233.123.349.188l.198.11a83.701 83.701 0 01.455.285l-.002-.001c.132.085.262.172.398.266l.05.035.031.022c.055.038.055.038.168.12.101.074.187.14.287.22.057.045.057.045-.9-.543l.981.608c.123.097.238.191.37.304a7.087 7.087 0 01.565.514c.106.103.197.194.29.29l.025.026.01.01a8.676 8.676 0 01.464.51l.027.033c.094.109.159.188.285.346l.026.032c.118.147.187.236.29.377.079.11.079.11.13.186l.039.055a16.562 16.562 0 01.491.755l.09.15L647.782 273.73l.09.169c.049.09.094.177.147.28a11.468 11.468 0 01.332.686c.064.143.108.25.165.396l.009.022.018.046c.057.147.108.28.15.4l.01.026a7.794 7.794 0 01.243.763l.005.018c.036.123.067.238.093.341l.009.031a7.488 7.488 0 01.162.736l.016.09c.027.152.043.25.072.444l.002.012a1.239 1.239 0 01-.008-.057l.004.02a6.383 6.383 0 01.085.74l.001.012c.015.166.025.313.032.461l.002.035c.007.105.012.204.016.447v-.072a7.688 7.688 0 01-.003.318c-.002.2-.005.365-.015.544l-.002.04a10.256 10.256 0 01-.05.64c-.02.183-.043.367-.082.63zM169.652 550.32z"></path>
+                </g>
+              </svg></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="tagline">
+            <div style="padding-bottom: 23px;">Watch live streams<br />with your friends.</div>
+            <div>Create your own shows<br />for your fans.</div>
+          </div>
+
+          <div class="getAppText">Watch now with <a href="https://www.google.com/chrome/" target="_blank">Chrome</a>,
+            <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox</a>,
+            <br /> or download the Caffeine app.
+          </div>
+          <div class="buttonContainer">
+            <a
+              class="button"
+              href="https://apps.apple.com/us/app/caffeine-live-streaming/id1170629931"
+              target="_blank"
+              onclick="trackAppInstallClick('iOSAppStoreCTAClicked')"
+              >iOS</a
+            >
+            <span class="spacer"></span>
+            <a
+              class="button"
+              href="https://play.google.com/store/apps/details?id=tv.caffeine.app&amp;hl=en_US"
+              target="_blank"
+              onclick="trackAppInstallClick('androidPlayStoreCTAClicked')"
+              >Android</a
+            >
+          </div>
+          <div class="browserInfo">
+            Broadcast to Caffeine from Windows,
+            <a href="https://www.google.com/chrome/" target="_blank">Chrome</a>, and
+            <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox</a>.
+          </div>
+        </div>
+        <div class="footer">
+          <a href="about.html">About Us</a>
+          <a href="newsroom.html">Newsroom</a>
+          <a href="tos.html">Rules + Legal</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="careers.html">
+            Careers
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      (function() {
+        //  ==================================
+        //  = BEGIN shared landing page code =
+        //  ==================================
+
+        /* NOTE: This data definition code is shared between three pages and should
+         * be updated on all three whenever it changes. Make sure it's consistent across:
+         * 1. The Tracer home page
+         * 2. The mobile browser unsupported page
+         * 3. The desktop browser unsupported page
+         *
+         * The schema is:
+         * {
+         *   broadcasterName: string,
+         *   broadcasterImagePath: string
+         *   showName?: string
+         *   // Either showTimestamp or customShowScheduleText is required in the input data
+         *   showTimestamp: UnixTimestamp // Translates into a showSchedule value with a
+         *                                // localized time like: "LIVE on Mondays at 1PM"
+         *   customShowScheduleText: string // something like "LIVE on Caffeine"
+         *
+         *   // Part of the processed, outputted broadcasterCarouselItems.
+         *   // Not needed in the input data.
+         *   showSchedule: string
+         * }
+         *
+         * You should only ever use the showSchedule field when rendering the show's schedule
+         * to the user.
+         *
+         * TODO: showTimestamp field does not currently take California daylight savings
+         * time changes into account, so it will break on November 1st, 2019.
+         */
+        const broadcasterCarouselItems = (() => {
+          //  ---------------------------------------------------------------------
+          //  - THIS IS THE PART YOU WANT TO CHANGE TO UPDATE IMAGES OR SHOW INFO -
+          //  ---------------------------------------------------------------------
+          return [
+            {
+              broadcasterName: "BattleFest",
+              broadcasterImagePath: "/promotional-images/Battlefest_UnsupportedBrowser_Image_2.png",
+              showName: "@BattleFest",
+              customShowScheduleText: "Live on Caffeine",
+            },
+            {
+              broadcasterName: "Memphis Jookin",
+              broadcasterImagePath: "/promotional-images/Battlefest_UnsupportedBrowser_Image_1.png",
+              showName: "@MemphisJookin",
+              customShowScheduleText: "Live on Caffeine",
+            },
+          ].map((carouselItem) => {
+            // Localize the event time and add that field in as localizedTimeText
+            if (carouselItem.showTimestamp) {
+              const ONE_WEEK = 1000 * 60 * 60 * 24 * 7;
+              // Based on the numbers Date.getDay() returns, where 0 is Sunday
+              const daysOfTheWeek = [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+              ];
+              const originalEventTime = carouselItem.showTimestamp * 1000;
+              const weeksBetweenOriginalEventAndNextEvent = Math.ceil(
+                (Date.now() - originalEventTime) / ONE_WEEK,
+              );
+              const nextEventDateTime = new Date(
+                originalEventTime + weeksBetweenOriginalEventAndNextEvent * ONE_WEEK,
+              );
+              const nextEventDayName = daysOfTheWeek[nextEventDateTime.getDay()];
+              const nextEventHourOfTheDay =
+                nextEventDateTime.getHours() > 12
+                  ? nextEventDateTime.getHours() - 12
+                  : nextEventDateTime.getHours() === 0
+                  ? 12
+                  : nextEventDateTime.getHours();
+              const nextEventMinutesPastTheHour = nextEventDateTime.getMinutes();
+              const nextEventPeriodOfTheDay = nextEventDateTime.getHours() >= 12 ? "PM" : "AM";
+
+              return Object.assign({}, carouselItem, {
+                showSchedule:
+                  `LIVE on ${nextEventDayName}s at ` +
+                  nextEventHourOfTheDay +
+                  (nextEventMinutesPastTheHour > 0
+                    ? ":" +
+                      (nextEventMinutesPastTheHour < 10 ? "0" : "") +
+                      nextEventMinutesPastTheHour
+                    : "") +
+                  nextEventPeriodOfTheDay,
+              });
+            } else {
+              return Object.assign({}, carouselItem, {
+                showSchedule: carouselItem.customShowScheduleText,
+              });
+            }
+          });
+        })();
+        //  ================================
+        //  = END shared landing page code =
+        //  ================================
+
+        // ======================================
+        // = BEGIN shared unsupported page code =
+        // ======================================
+
+        /* NOTE: this function is duplicated in both unsupported pages
+         * (unsupported-browser.html and unsupported-mobile.html). If you update it,
+         * make sure to copy the updates so they're present in both files!
+         *
+         * For this initializer to work properly, the page must have a few elements with
+         * specific classes where it can fill in details from the item definition:
+         *
+         * .broadcasterCarouselImage will have its background-image set to the correct url for
+         *   the specified broadcasterImagePath and will have correct optimization parameters
+         *   set automatically.
+         *   The first instance of that class in the page should have style="opacity: 1" on it
+         *
+         * .broadcasterName will have its innerText directly set to the given broadcasterName,
+         *   so putting a span exactly where you want the text to be inserted is recommended.
+         *
+         * .showName will be set similarly to .broadcasterName. If the element for it is missing
+         *   it simply won't be inserted into the page.
+         *
+         * .showTime is where the prettified event time description will be inserted
+         */
+        function initializeAndRunBroadcasterCarousel() {
+          // Get all the elements for the broadcaster carousel parts
+          const broadcasterCarouselItemCount = broadcasterCarouselItems.length;
+
+          const broadcasterCarouselImageElements = Array.from(
+            document.querySelectorAll(".broadcasterCarouselImage"),
+          );
+          const broadcasterNameElements = Array.from(document.querySelectorAll(".broadcasterName"));
+          const showNameElements = Array.from(document.querySelectorAll(".showName"));
+          const showTimeElements = Array.from(document.querySelectorAll(".showTime"));
+
+          // Insert the information into the page
+          broadcasterCarouselItems.map((item, index) => {
+            const image = broadcasterCarouselImageElements[index];
+            const baseImageUrl = "https://assets.caffeine.tv/";
+            const imageOptions = "?width=700&optimize=true";
+            const imageUrl = `url(${baseImageUrl}${item.broadcasterImagePath}${imageOptions}`;
+
+            image.style.opacity = index === 0 ? "1" : "0";
+            image.style.backgroundImage = image.style.backgroundImage
+              ? image.style.backgroundImage + `, ${imageUrl}`
+              : imageUrl;
+            broadcasterNameElements[index].textContent = item.broadcasterName;
+            if (showNameElements[index] && item.showName) {
+              showNameElements[index].textContent = item.showName;
+            }
+            showTimeElements[index].textContent = item.showSchedule;
+          });
+
+          // Run the carousel animation forever
+          const ANIMATION_DURATION = 7000;
+          function performAnimationTransition(currentImageIndex) {
+            const nextImageIndex = (currentImageIndex + 1) % broadcasterCarouselItemCount;
+            const currentImageElement = broadcasterCarouselImageElements[currentImageIndex];
+            const nextImageElement = broadcasterCarouselImageElements[nextImageIndex];
+
+            currentImageElement.style.opacity = "0";
+            nextImageElement.style.opacity = "1";
+            setTimeout(() => performAnimationTransition(nextImageIndex), ANIMATION_DURATION);
+          }
+          setTimeout(() => performAnimationTransition(0), ANIMATION_DURATION);
+        }
+
+        initializeAndRunBroadcasterCarousel();
+
+        //  ====================================
+        //  = END shared unsupported page code =
+        //  ====================================
+
+        window.trackAppInstallClick = (eventName) =>
+          dataLayer.push({
+            event: eventName,
+          });
+      })();
+    </script>
+  </body>
+
+<!-- Mirrored from www.caffeine.tv/unsupported-browser.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Feb 2024 20:24:39 GMT -->
+</html>
